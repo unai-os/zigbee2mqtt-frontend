@@ -157,7 +157,7 @@ export const computeSettingsDiff = (before: object, after: object) => {
     return diffObj;
 }
 
-export const sanitizeZ2MDeviceName = (deviceName?: string): string => deviceName ? deviceName.replace(/:|\s|\//g, "-") : "NA";
+export const sanitizeDeviceName = (deviceName?: string): string => deviceName ? deviceName.replace(/:|\s|\//g, "-") : "NA";
 
 export const getEndpoints = (obj: Device | Group): Endpoint[] => {
     let eps: Endpoint[] = [];
